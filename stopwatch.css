@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --background-clr: #1A1C33;
+    --container-clr: #313348;
+    --font-clr: #26EFA4;
+    --spanBackgound-clr: #151C25;
+    --date-clr: #496C83;
+}
+
+.stopwatch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.stopwatch-container{
+    box-shadow: 0 0 10px 0 var(--date-clr);
+    padding: 20px;
+    border-radius: 10px;
+}
+.stopwatch-time{
+    font-family: "Orbitron", sans-serif;
+    color: var(--font-clr);
+    font-size: 5rem;
+}
+.btns{
+    margin: 20px 0;
+}
+.start{
+    padding: 5px 25px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 0 0 10px 0 var(--date-clr);
+    color: var(--font-clr);
+}
+.stop{
+    padding: 5px 25px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 20px;
+    background: transparent;
+    box-shadow: 0 0 10px 0 var(--date-clr);
+    color: var(--font-clr);
+}
+.reset{
+    padding: 5px 25px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 0 0 10px 0 var(--date-clr);
+    color: var(--font-clr);
+}
+.millisec{
+    font-size: 2.5rem;
+}

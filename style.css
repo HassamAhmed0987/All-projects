@@ -192,12 +192,6 @@ body {
 .qr-code-generator.active{
     display: flex;
 }
-.todo-list-app{
-    display: none;
-}
-.todo-list-app.active{
-    display: flex;
-}
 .digital-clock{
     display: none;
 }
