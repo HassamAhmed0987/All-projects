@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./quiz.css">
+    <link rel="stylesheet" href="./qrcode.css">
+    <link rel="stylesheet" href="./digital-clock.css">
+</head>
+
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="aside">
+            <div class="aside-bar">
+                <div class="brand-logo">
+                    <img class="logo" src="./assets/dashboard-layout-removebg-preview.png" alt="">
+                </div>
+                <div class="nav-items">
+                    <ul class="projects-nav">
+                        <li data-id="dashboard" class="item">Dashboard</li>
+                        <li data-id="projects" class="item"><i class="fa-solid fa-diagram-project"></i> All projects
+                        </li>
+                        <li data-id="quiz-app" class="item">Quiz App</li>
+                        <li data-id="qr-code-generator" class="item">QR Code Generator</li>
+                        <li data-id="digital-clock" class="item">Digital Clock</li>
+                        <li data-id="stopwatch" class="item">Stopwatch</li>
+                        <li data-id="password-generator" class="item">Password Generator</li>
+                        <li data-id="text-to-voice" class="item">Text To Voice</li>
+                    </ul>
+                    <ul>
+                        <li class="item"><i class="fa-regular fa-user"></i> Profile</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <section class="main-section">
+            <header class="header">
+                <h1>Project ShowCase Dashboard</h1>
+                <div class="profile">
+                    <div class="profile-img">
+                        <img class="profile-pic" src="./assets/WhatsApp Image 2026-01-04 at 10.38.41 AM 123.jpeg"
+                            alt="">
+                    </div>
+                    <h3>Welcome, Hassam</h3>
+                </div>
+            </header>
+            <div class="all-projects">
+                <div class="project dashboard"></div>
+                <div class="project projects">
+                    <div class="card">
+                        <img class="card-img" src="./assets/QR-Code-Generator-removebg-preview.png" alt="">
+                        <div class="card-content">
+                            <h2>QR Code Generator</h2>
+                            <p>Generate code instantly,using html5-qrcode library</p>
+                            <button class="live-btn">live</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project quiz-app">
+                    <div class="container">
+                        <div class="quiz1">
+                            <h1 class="card-heading">HTML Quiz</h1>
+                            <p class="totalquestion"></p>
+                            <button class="start-html-quiz">Start</button>
+                        </div>
+                        <div class="html-model ">
+                            <div class="quiz">
+                                <i class="fa-solid fa-xmark quiz-close"></i>
+                                <h1 class="main-heading">HTML QUIZ</h1>
+                                <hr>
+                                <h2 class="question">Question write here</h2>
+                                <div class="answer-btns">
+                                </div>
+                                <button class="next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project qr-code-generator">
+                    <div class="qr-code-container">
+                        <h1>QR Code Generator</h1>
+                        <input type="text" class="qr-text" name="text" id="text">
+                        <button class="qr-btn">Generate</button>
+                    </div>
+                    <div class="qrcode-model">
+                        <div class="qr-model">
+                            <i class="fa-solid fa-xmark qr-close"></i>
+                            <div class="qrcode"></div>
+                            <p class="qrcode-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project digital-clock">
+                    <div class="digitalclock-container">
+                        <h1 class="clock">
+                            <span class="hours">00</span>:
+                            <span class="minutes">00</span>:
+                            <span class="second">00</span>
+                        </h1>
+                        <p class="clock-date"></p>
+                    </div>
+                </div>
+                <div class="project stopwatch">
+                    <h1>Stopwatch</h1>
+                </div>
+                <div class="project password-generator">
+                    <h1>Password Generator</h1>
+
+                </div>
+                <div class="project text-to-voice">
+                    <h1>Text to voice</h1>
+
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="./app.js"></script>
+<script src="./quiz.js"></script>
+<script src="./qrcode.js"></script>
+<script src="./digital-clock.js"></script>
+
+</html>

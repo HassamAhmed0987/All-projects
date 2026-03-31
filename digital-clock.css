@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --background-clr: #1A1C33;
+    --container-clr: #313348;
+    --font-clr: #26EFA4;
+    --spanBackgound-clr: #151C25;
+    --date-clr: #496C83;
+}
+.digital-clock{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.digitalclock-container{
+    padding: 20px;
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 var(--date-clr);
+    text-align: center;
+}
+.clock{
+    font-family: "Orbitron", sans-serif;
+    color: var(--font-clr);
+    font-size: 5rem;
+}
+.clock span{
+    display: inline-block;
+    width: 150px;
+}
+.clock-date{
+    font-family: "Orbitron", sans-serif;
+    color: var(--font-clr);
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+
